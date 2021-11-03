@@ -39,6 +39,30 @@ This repository contains code, labels and metadata for AVASpeech - SMAD dataset 
 
 1. **process.py**: code to download the audio and calculate the statistics
 
+## Definition of Speech and Music
+#### Music
+- Pitched sounds with more than one note
+- Singing voice
+- Ident
+- Melodic ringtone
+- Multiple instrumental sounds played simultaneously
+- Any rhythmic sequence of musical elements (moving melody, or drums/percussion)
+#### Non Music
+- Ambient sound effect (e.g., low frequency sound)
+- Pitched sound with only one note (no moving melody)
+- Traditional phone bell ring or buzz with no apparent musical elements
+#### Speech
+- human voice in different languages
+- Oh (is considered speech, as in Oh my! Or Oh no!)
+- Singing with lyrics
+#### Non Speech
+- Sighing
+- Screaming
+- Laughing
+- Ah, Hm, Uh-hum, Uh, Err
+- Groaning, moaning, heavy breathing
+
+
 ## Reference
 
 [1] S. Chaudhuri, J. Roth, D. P. Ellis, A. Gallagher, L. Kaver, R. Marvin, C. Pantofaru, N. Reale, L. G. Reid, K. Wilson et al., “AVA-speech: A densely la- beled dataset of speech activity in movies,” in Proceed- ings of the 19th Annual Conference of the International Speech Communication Association, 2018.
