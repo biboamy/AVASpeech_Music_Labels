@@ -2,6 +2,17 @@ import numpy as np
 import os
 import csv
 import matplotlib.pyplot as plt
+import tqdm
+import subprocess
+
+
+def download_audio():
+    with open('statistic.csv') as csvfile:
+        csv_reader = csv.reader(csvfile, delimiter=',')
+        next(csv_reader)
+        for row in tqdm.tqdm(csv_reader):
+            subprocess.call(f"ffmpeg -ss 0:15:00 -i $(youtube-dl -f 140 -g 'https://www.youtube.com/watch?v={row[0]}') -t 0:15:00 audio/{row[0]}.wav", shell=True)
+download_audio()
 
 
 def _extract_activation_roll(name, duration=900*16000, hop_size=160, sr=16000, split='\t'):
@@ -20,7 +31,7 @@ def _extract_activation_roll(name, duration=900*16000, hop_size=160, sr=16000, s
 def statistic_calculation():
     speech_percents, music_percents, overlap_percents = [], [], []
 
-    new_csvfile = open(os.path.join('statistic.csv'), 'w') 
+    new_csvfile = open('statistic.csv', 'w') 
     csvwriter = csv.writer(new_csvfile)
     csvwriter.writerow(['id', 'Music %', 'Speech %', 'Overlap %'])
 
@@ -68,4 +79,4 @@ def statistic_calculation():
     plt.title("Overlap Labels Percentage Distribution");
     plt.show()
 
-statistic_calculation()
+#statistic_calculation()
