@@ -46,3 +46,10 @@ This repository contains code, labels and metadata for AVASpeech - SMAD dataset 
 [2] S. Venkatesh, D. Moffat, and E. R. Miranda, “Inves- tigating the effects of training set synthesis for audio segmentation of radio broadcast,” Electronics, vol. 10, no. 7, p. 827, 2021.
 
 [3] D. Doukhan, E. Lechapt, M. Evrard, and J. Carrive, “INA’s MIREX 2018 music and speech detection sys- tem,” in 14th Music Information Retrieval Evaluation eXchange, 2018.
+
+## Contact
+
+Yun-Ning (Amy) Hung
+
+[yhung33@gatech.edu](mailto:yhung33@gatech.edu)
+
